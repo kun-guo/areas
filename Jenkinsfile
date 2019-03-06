@@ -2,7 +2,9 @@ pipeline {
   agent any
   stages {
     stage("检出") {
-      sh "git clone https://github.com/jenkinsci/blueocean-plugin.git"
+      steps {
+        sh "git clone https://github.com/jenkinsci/blueocean-plugin.git"
+      }
     }
     
     stage("编译") {
