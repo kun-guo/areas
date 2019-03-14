@@ -1,7 +1,11 @@
 pipeline {
-  agent any
+  agent none
   stages {
     stage('checkout') {
+      agent any
+      environment {
+        a = 'a'
+      }
       steps {
         echo 'hello checkout'
       }
