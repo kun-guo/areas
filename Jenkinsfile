@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'java-8'
+    }
+
+  }
   stages {
     stage('checkout') {
       agent any
