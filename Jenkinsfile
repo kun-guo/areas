@@ -21,7 +21,4 @@ pipeline {
       }
     }
   }
-  environment {
-    test = 'test'
-  }
 }
