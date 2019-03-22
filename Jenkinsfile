@@ -6,18 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('checkout') {
-      agent any
-      environment {
-        a = 'a'
-      }
+    stage('') {
       steps {
-        echo 'hello checkout'
-      }
-    }
-    stage('build') {
-      steps {
-        sh 'echo "hello word"'
+        sh '1'
       }
     }
   }
