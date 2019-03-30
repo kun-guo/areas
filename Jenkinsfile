@@ -3,7 +3,7 @@ pipeline {
     label 'java-8'
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh '1'
       }
