@@ -54,27 +54,7 @@ pipeline {
           }
         }
         
-        stage("builder-3") {
-          agent any
-          stages {
-            stage("checkout") {
-              steps {
-                echo "checkout"
-                
-              }
-            }
-            stage("build:e-scheduler") {
-              steps {
-                echo "build:e-scheduler"
-              }
-            }
-            stage("build:e-coding") {
-              steps {
-                echo "build:e-coding"
-              }
-            }
-          }
-        }
+        
       }
     }
   }
