@@ -1,22 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage("parallel") {
+    stage('parallel') {
       parallel {
-        stage("checkout") {
+        stage('checkout') {
           steps {
-            echo "checkout"
+            echo 'checkout'
           }
         }
-        
-        stage("build") {
+        stage('build') {
           steps {
-            echo "build"
+            echo 'build'
           }
         }
       }
-      
     }
-    
   }
 }
