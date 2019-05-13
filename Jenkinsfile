@@ -1,6 +1,5 @@
-pipepline {
+pipeline {
   agent any
-  
   stages {
     stage("并行构建") {
       parallel {
@@ -15,7 +14,6 @@ pipepline {
             echo "build"
           }
         }
-        
       }
       
     }
