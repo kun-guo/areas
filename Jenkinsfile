@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage("并行构建") {
+    stage("parallel") {
       parallel {
         stage("checkout") {
           steps {
